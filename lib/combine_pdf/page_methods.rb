@@ -13,7 +13,7 @@ module CombinePDF
 	# This module injects page editing methods into existing page objects and the PDFWriter objects.
 	module Page_Methods
 		include Renderer
-		require 'pry-byebug'
+		
 		# holds the string that starts a PDF graphic state container - used for wrapping malformed PDF content streams.
 		CONTENT_CONTAINER_START = 'q'
 		# holds the string that ends a PDF graphic state container - used for wrapping malformed PDF content streams.
